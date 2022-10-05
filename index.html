@@ -8,24 +8,39 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
         integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="resources/leaflet/leaflet.css">
     <link rel="stylesheet" href="resources/plugins/Leaflet-PolylineMeasure.css">
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Leaflet tutorial</title>
 </head>
 
 <body>
-    <div id="map"></div>
+    <div class="container">
+        <div class="office-list">
+            <div class="heading">
+                <h2>Corporate Offices</h2>
+            </div>
+            <ul class="list"></ul>
+        </div>
+        <div id="map"></div>
+    </div>
 
+    <!-- leaflet -->
+    <script src="resources/leaflet/leaflet.js"></script>
     <!-- Make sure you put this AFTER Leaflet's CSS -->
-    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
-        integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+    <!-- <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+        integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script> -->
     <!-- leaflet-providers -->
     <script src="resources/plugins/leaflet-providers.js"></script>
     <!-- measure plugin -->
     <script src="resources/plugins/Leaflet-PolylineMeasure.js"></script>
 
+    <script src="resources/data/offices.js"></script>
     <script src="main.js"></script>
 </body>
 
